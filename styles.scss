@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  justify-content: center;
+}
+
+header {
+  padding: 5px 0;
+  margin: 0 15px;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(221, 221, 223);
+
+  h1 span:nth-child(1) { color: rgb(66,133,244); }
+  h1 span:nth-child(2) { color: rgb(234,67,53); }
+  h1 span:nth-child(3) { color: rgb(251,188,5); }
+  h1 span:nth-child(4) { color: rgb(66,133,244); }
+  h1 span:nth-child(5) { color: rgb(52,168,83); }
+  h1 span:nth-child(6) { color: rgb(95,99,104); }
+}
+
+.below-header {
+  height: 80px;
+  background-color: rgb(250,250,250);
+  border-bottom: 1px solid rgb(221, 221, 223);
+}
+
+.morse-code-translator {
+  display: flex;
+  justify-content: center;
+  
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px grey;
+    width: 800px;
+    transform: translate( 0px, -10px );
+    background-color: white;
+    border-radius: 3px;
+
+    &__inputs {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      &__left {
+        width: 50%;
+
+        &__labels {
+          border-bottom: 1px solid rgb(221, 221, 223);
+          padding: 0 5px;
+          font-weight: bold;
+          color: rgb(96,100,105);
+
+          label {
+            padding: 0 10px;
+          }
+
+          .english-active , .morse-active {
+            color: rgb(26,115,232);
+            border-bottom: 8px solid rgb(26,115,232);
+          }
+        }
+
+        #morse-code-english {
+          background-color: white;
+          padding: 5px 5px;
+          height: 200px;
+          width: 100%;
+          border: 0px;
+          border-bottom: 1px solid rgb(221, 221, 223);
+          font-family: 'Zen Kaku Gothic Antique', sans-serif;
+          font-size: 15px;
+        }
+
+        textarea:focus {outline:none;}
+
+
+      }
+
+      &__right {
+        width: 50%;
+
+        &__label {
+          font-weight: bold;
+          padding: 0 5px;
+          color: rgb(96,100,105);
+          border-bottom: 1px solid rgb(221, 221, 223);
+        }
+
+        #morse-code-translation {
+          padding: 0 5px;
+          background-color: rgb(245,245,245);
+          height: 200px;
+          border-bottom: 1px solid rgb(221, 221, 223);
+        }
+      }
+    }
+
+    &__submit {
+      font-family: 'Zen Kaku Gothic Antique', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(25,103,210);
+      padding: 5px;
+      width: 120px;
+      margin: 10px;
+      border: 1px solid rgb(221, 221, 223);
+      background-color: white;
+      border-radius: 3px;
+      box-shadow: 1px 1px 5px grey;
+
+    }
+
+    &__submit:hover {
+      background-color: rgb(228,236,250);
+    }
+  }
+}

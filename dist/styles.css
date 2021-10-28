@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  justify-content: center;
+}
+
+header {
+  padding: 5px 0;
+  margin: 0 15px;
+  font-size: 16px;
+  border-bottom: 1px solid #dddddf;
+}
+header h1 span:nth-child(1) {
+  color: #4285f4;
+}
+header h1 span:nth-child(2) {
+  color: #ea4335;
+}
+header h1 span:nth-child(3) {
+  color: #fbbc05;
+}
+header h1 span:nth-child(4) {
+  color: #4285f4;
+}
+header h1 span:nth-child(5) {
+  color: #34a853;
+}
+header h1 span:nth-child(6) {
+  color: #5f6368;
+}
+
+.below-header {
+  height: 80px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #dddddf;
+}
+
+.morse-code-translator {
+  display: flex;
+  justify-content: center;
+}
+.morse-code-translator__card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 5px grey;
+  width: 800px;
+  transform: translate(0px, -10px);
+  background-color: white;
+  border-radius: 3px;
+}
+.morse-code-translator__card__inputs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.morse-code-translator__card__inputs__left {
+  width: 50%;
+}
+.morse-code-translator__card__inputs__left__labels {
+  border-bottom: 1px solid #dddddf;
+  padding: 0 5px;
+  font-weight: bold;
+  color: #606469;
+}
+.morse-code-translator__card__inputs__left__labels label {
+  padding: 0 10px;
+}
+.morse-code-translator__card__inputs__left__labels .english-active, .morse-code-translator__card__inputs__left__labels .morse-active {
+  color: #1a73e8;
+  border-bottom: 8px solid #1a73e8;
+}
+.morse-code-translator__card__inputs__left #morse-code-english {
+  background-color: white;
+  padding: 5px 5px;
+  height: 200px;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid #dddddf;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 15px;
+}
+.morse-code-translator__card__inputs__left textarea:focus {
+  outline: none;
+}
+.morse-code-translator__card__inputs__right {
+  width: 50%;
+}
+.morse-code-translator__card__inputs__right__label {
+  font-weight: bold;
+  padding: 0 5px;
+  color: #606469;
+  border-bottom: 1px solid #dddddf;
+}
+.morse-code-translator__card__inputs__right #morse-code-translation {
+  padding: 0 5px;
+  background-color: whitesmoke;
+  height: 200px;
+  border-bottom: 1px solid #dddddf;
+}
+.morse-code-translator__card__submit {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1967d2;
+  padding: 5px;
+  width: 120px;
+  margin: 10px;
+  border: 1px solid #dddddf;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px grey;
+}
+.morse-code-translator__card__submit:hover {
+  background-color: #e4ecfa;
+}
