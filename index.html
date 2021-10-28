@@ -17,11 +17,26 @@
     </h1>
   </header>
   <div class="below-header"></div>
-  <form class="morse-code-translator">
-    <label for="morse-code-english">Morse Code / English:</label>
-    <input type="text" id="morse-code-english" name="morse-code-english" class="morse-code-translator__input">
-    <input type="submit" value="Submit" class="morse-code-translator__submit">
+  <div class="morse-code-translator">
+  <form class="morse-code-translator__card">
+    <div class="morse-code-translator__card__inputs">
+      <div class="morse-code-translator__card__inputs__left">
+        <div class="morse-code-translator__card__inputs__left__labels">
+          <label for="morse-code-english" class="morse-code-heading">MORSE CODE</label>
+          <label for="morse-code-english" class="english-heading">ENGLISH</label>
+        </div>
+        <div><textarea type="text" id="morse-code-english" name="morse-code-english" class="morse-code-translator__input"></textarea></div>
+      </div>
+      <div class="morse-code-translator__card__inputs__right">
+        <div class="morse-code-translator__card__inputs__right__label">
+          <label for="morse-code-translation">TRANSLATION</label>
+        </div>
+        <div id="morse-code-translation"></div>
+      </div>
+    </div>
+    <input type="submit" value="TRANSLATE" class="morse-code-translator__card__submit">
   </form>
+  </div>
   <script src="./app.js" type="module"></script>
 </body>
 </html>
