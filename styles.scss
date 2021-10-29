@@ -67,7 +67,7 @@ header {
 
           .english-active , .morse-active {
             color: rgb(26,115,232);
-            border-bottom: 8px solid rgb(26,115,232);
+            border-bottom: 2px solid rgb(26,115,232);
           }
         }
 
@@ -123,6 +123,27 @@ header {
 
     &__submit:hover {
       background-color: rgb(228,236,250);
+    }
+  }
+}
+
+@media only screen and (max-width: 530px){
+
+  .morse-code-translator {
+    &__card {
+      &__inputs {
+        &__left {
+          &__labels {
+            font-size: 12px;
+          }
+        }
+
+        &__right {
+          &__label {
+            font-size: 12px;
+          }
+        }
+      }
     }
   }
 }

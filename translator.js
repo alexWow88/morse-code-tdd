@@ -37,7 +37,7 @@ export const translateInput = (morseEnglishInput) => {
 
   if (englishHeading.classList.contains("english-active")) {
 
-    const arrayOfStrings = morseEnglishInput.split("");
+    const arrayOfStrings = morseEnglishInput.toUpperCase().split("");
 
     for (let index = 0; index < arrayOfStrings.length; index++) {
       for (let j = 0; j < dictionaryArray.length; j++) {
