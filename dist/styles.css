@@ -76,7 +76,7 @@ header h1 span:nth-child(6) {
 }
 .morse-code-translator__card__inputs__left__labels .english-active, .morse-code-translator__card__inputs__left__labels .morse-active {
   color: #1a73e8;
-  border-bottom: 8px solid #1a73e8;
+  border-bottom: 2px solid #1a73e8;
 }
 .morse-code-translator__card__inputs__left #morse-code-english {
   background-color: white;
@@ -121,4 +121,13 @@ header h1 span:nth-child(6) {
 }
 .morse-code-translator__card__submit:hover {
   background-color: #e4ecfa;
+}
+
+@media only screen and (max-width: 530px) {
+  .morse-code-translator__card__inputs__left__labels {
+    font-size: 12px;
+  }
+  .morse-code-translator__card__inputs__right__label {
+    font-size: 12px;
+  }
 }
