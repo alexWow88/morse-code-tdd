@@ -26,7 +26,7 @@ var translateInput = function translateInput(morseEnglishInput) {
   }
 
   if (englishHeading.classList.contains("english-active")) {
-    var _arrayOfStrings = morseEnglishInput.split("");
+    var _arrayOfStrings = morseEnglishInput.toUpperCase().split("");
 
     for (var _index = 0; _index < _arrayOfStrings.length; _index++) {
       for (var _j = 0; _j < dictionaryArray.length; _j++) {
